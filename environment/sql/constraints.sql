@@ -11,7 +11,7 @@ ALTER TABLE `default_role`
   ADD CONSTRAINT `default_role_ibfk_1` FOREIGN KEY (`roleFK`) REFERENCES `role` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `default_role_ibfk_2` FOREIGN KEY (`guildFK`) REFERENCES `guild` (`snowflake`) ON DELETE CASCADE;
 
-ALTER TABLE `guild_settings`
+ALTER TABLE `guild_setting`
   ADD CONSTRAINT `guild_settings_ibfk_1` FOREIGN KEY (`guildFK`) REFERENCES `guild` (`snowflake`) ON DELETE CASCADE;
 
 ALTER TABLE `module_settings`
